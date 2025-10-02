@@ -7,8 +7,7 @@ int main(){
 	
 	int d1, d2, count=0, num;
 	num=n;
-	while(n!=0){
-		n=n/10;
+	for(n; n!=0; n=n/10){
 		count++;
 	}
 	int div=1, i;
@@ -18,5 +17,7 @@ int main(){
 	d1=num/div;
 	d2=num%10;
 	printf("Sum of first and last digit of %d = %d", num, d1+d2);
+	
 	return 0;
+	
 }
